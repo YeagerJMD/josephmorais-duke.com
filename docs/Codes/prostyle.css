@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #2C3E50;    /* Dark blue-gray */
+    --secondary-color: #E74C3C;  /* Coral red */
+    --accent-color: #3498DB;     /* Sky blue */
+    --text-color: #ECF0F1;       /* Off-white */
+    --background-color: #34495E; /* Darker blue-gray */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--primary-color);
+    border: #4895EF solid 5px;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    cursor: default;
+    margin-right: 20px;
+}
+
+.nagivation a{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.nagivation a:hover{
+    color:#4895EF;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+}
+
+.btn-talk{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-talk:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+main {
+    padding-top: 150px;
+}
+
+
+#professional .pro{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#professional .pro h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#professional .pro h3 {
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+#professional .pro h4 {
+    font-size: 1.0em;
+    margin: 0 200px;
+    padding: 20px;
+    color: white;
+    border: #4895EF 2px solid;
+    border-radius: 10px;
+}
+
+#timeline .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-column {
+    width: 48%;
+}
+
+.timeline-column h2 {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: wavy underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: white;
+    text-underline-offset: 5px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 15px;
+    width: 2px;
+    height: calc(100% + 15px);
+    background-color: var(--secondary-color);
+}
+
+.timeline-item:last-child::after {
+    display: none;
+}
+
+.timeline-content {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: #4895EF 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        background-color: #ffffff;
+    
+}
+
+.timeline-content h3 {
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+        background-color: #ffffff;
+}
+
+.timeline-content h4 {
+    color: var(--secondary-color);
+    font-size: 1.4em;
+    margin-bottom: 10px;
+        background-color: #ffffff;
+}
+
+.timeline-content p, .timeline-content ul {
+    color: black;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    font-weight: 550;
+    background-color: #ffffff;
+}
+
+.timeline-content ul {
+    padding-left: 20px;
+    
+}
+
+
+
+#skill {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#skill h2{
+    color: var(--secondary-color);
+    font-size: 2em;
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: white;
+    text-underline-offset: 5px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#skill h3{
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 5px;
+}
+
+#skill .skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 -20px;
+}
+
+#skill .skill > div {
+    flex: 1;
+    margin: 0 40px;
+    background-color: var(--primary-color);
+    padding: 20px;
+    border: #4895EF 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+#skill .skill h2 {
+    color: var(--secondary-color);
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+#skill .skill ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skill .skill li {
+    color: black;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-bottom: 10px;
+    border: black 3px solid;
+    background-color: #ffffff;
+}
+
+
+#qualification {
+    margin-bottom: 40px;
+}
+#qualification h2 {
+    text-align: center;
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: white;
+    text-underline-offset: 5px;
+    font-size: 2em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#qualification li{
+    color: black;
+    font-size: 1.25em;
+    font-weight: 600;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+    border: #4895EF 5px solid;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    list-style-type: none;
+    background-color: #ffffff;
+}
+
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    #timeline .container {
+        flex-direction: column;
+    }
+
+    .timeline-column {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

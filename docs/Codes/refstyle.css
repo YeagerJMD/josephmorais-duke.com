@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    .nagivation a {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+}
+
+
+:root {
+    --primary-color: #2C3E50;    /* Dark blue-gray */
+    --secondary-color: #E74C3C;  /* Coral red */
+    --accent-color: #3498DB;     /* Sky blue */
+    --text-color: #ECF0F1;       /* Off-white */
+    --background-color: #34495E; /* Darker blue-gray */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border: #4895EF solid 5px;
+    background-color: var(--background-color);
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    cursor: default;
+    margin-right: 20px;
+}
+
+
+.nagivation a{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.nagivation a:hover{
+    color:#4895EF;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+}
+
+.btn-talk{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-talk:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+.references{
+    color: white;
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 60px;
+}
+.references h2{
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.references h3{
+    font-size: 1.7em;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+}
+
+.ref{
+    margin-top: 25px;
+    border: #4895EF 5px solid;
+    border-radius: 10px;
+    padding: 60px;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

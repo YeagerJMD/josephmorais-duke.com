@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Make the page responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+    .nagivation a {
+        font-size: 1em;
+        margin-right: 10px;
+    }
+}
+
+
+:root {
+    --primary-color: #2C3E50;    /* Dark blue-gray */
+    --secondary-color: #E74C3C;  /* Coral red */
+    --accent-color: #3498DB;     /* Sky blue */
+    --text-color: #ECF0F1;       /* Off-white */
+    --background-color: #34495E; /* Darker blue-gray */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    border: #4895EF solid 5px;
+}
+
+.logo{
+    font-size: 2em;
+    color: white;
+    cursor: default;
+    margin-right: 20px;
+}
+
+
+.nagivation a{
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    margin-right: 30px;
+    font-weight: 600;
+}
+
+.nagivation a:hover{
+    color:#4895EF;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: var(--secondary-color);
+}
+
+.btn-talk{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-talk:hover{
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+    background-color: var(--primary-color);
+}
+
+.content{
+    max-width: 900px;
+    color: white;
+}
+
+.content h2{
+    font-size: 3em;
+    line-height: 1.5em;
+}
+
+.content h2 span{
+    color: white;
+    text-decoration:wavy underline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: var(--secondary-color);
+    text-underline-offset: 10px;
+}
+
+img{
+    max-width: 400px;
+    width: 100%;
+    margin: 20px 0;
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    margin-top: 100px;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.content h4{
+    padding-top: 10px;
+    font-size: 2em;
+}
+
+.content p{
+    font-size: 1.1em;
+    margin: 10px 0 20px;
+}
+
+.btn-group a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: var(--secondary-color);
+    border-radius: 10px;
+    border: 2px solid var(--secondary-color);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-group a:hover:nth-child(1){
+    color: var(--secondary-color);
+    background-color: transparent;
+}
+
+.btn-group a:nth-child(2){
+    color: var(--secondary-color);
+    background-color: transparent;
+    margin-left: 20px;
+    padding: 10px 30px;
+}
+
+.btn-group a:hover:nth-child(2){
+    color: white;
+    background-color: var(--secondary-color);
+}
+
+.social-icons{
+    position: absolute;
+    bottom: 50px;
+}
+
+.social-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid white;
+    transition: 0.3s;
+}
+
+.social-icons a:hover{
+    transform: translateY(-5px);
+}
+
+.social-icons a i{
+    color: white;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
